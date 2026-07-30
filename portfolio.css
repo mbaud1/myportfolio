@@ -237,3 +237,56 @@ body {
   background: #2563eb;
   transform: translateY(-2px);
 }
+/* Top-Right Navigation CTA Button */
+.btn-cta {
+  background-color: transparent;
+  color: #38bdf8; /* Bright accent cyan/blue */
+  border: 1px solid #38bdf8;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #38bdf8;
+  color: #0f172a; /* Dark text on filled hover */
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+/* Container Spacing for Precise Left Edge Alignment */
+.section-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects-section h2,
+.about-section h2,
+.contact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  padding-left: 0; /* Ensures direct flush alignment with the grid left border */
+}
+/* Card Thumbnail Placeholder Alignment & Background */
+.placeholder-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.placeholder-thumbnail i {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.3));
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-card:hover .placeholder-thumbnail i {
+  transform: scale(1.1);
+  opacity: 1;
+}
