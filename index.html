@@ -3,75 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bauduin | Portfolio</title>
+  <title>Bauduin | Front-End Developer & Designer</title>
   <link rel="stylesheet" href="portfolio.css">
+  <!-- FontAwesome for UI Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Hi, I'm Bauduin </h1>
-    <p>Web Developer & Front-End Designer</p>
-    <p class="bio">Building functional, clean, and responsive web applications.</p>
+  <!-- 1. Sticky Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Bauduin<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-cta">Get in Touch</a>
+    </div>
   </header>
 
-  <!-- Projects Section -->
-  <section class="projects-section">
-    <h2>My Projects</h2>
-    
-    <div class="project-grid">
-      
-      <!-- Calorie Tracker Card -->
-    <article class="project-card">
-  <h3>🍎 Calorie Tracker</h3>
-  <p>A responsive web app for setting daily goals, logging meals, and calculating remaining calories in real time.</p>
-  
-  <div class="tech-tags">
-    <span>HTML5</span>
-    <span>CSS3</span>
-    <span>JavaScript</span>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Bauduin</span></h1>
+      <p class="tagline">Web Developer & Front-End Designer</p>
+      <p class="bio">Building functional, clean, and responsive web applications with a focus on polished UI and great user experiences.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="https://github.com/mbaud1" target="_blank" rel="noopener noreferrer" class="btn secondary">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </section>
 
-  <div class="card-links">
-    <!-- Updated live link pointing to subdomain -->
-    <a href="https://calories.m-baud.com" target="_blank" rel="noopener noreferrer" class="btn primary">Live App</a>
-    <a href="https://github.com/mbaud1/calorie-tracker" target="_blank" class="btn secondary">Source Code</a>
-  </div>
-</article>
-
-       <article class="project-card">
-  <h3>Lens</h3>
-  <p>A visual showcase of landscapes, portraits, and urban stories.</p>
-  
-  <div class="tech-tags">
-    <span>HTML5</span>
-    <span>CSS3</span>
-    <span>JavaScript</span>
-    <span>Camera</span>
-  </div>
-
-  <div class="card-links">
-    <!-- Updated live link pointing to subdomain -->
-    <a href="https://lens.m-baud.com/" target="_blank" rel="noopener noreferrer" class="btn primary">Lens Work</a>
-    <a href="https://github.com/mbaud1/lens" target="_blank" class="btn secondary">Source Code</a>
-  </div>
-</article>
-
-      <!-- Future Project Placeholder -->
-      <article class="project-card">
-        <h3>🚀 Next Project</h3>
-        <p>Currently in development. Coming soon!</p>
+  <!-- 2. About Me & Skills Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a web developer passionate about crafting clean code and intuitive digital experiences. When I'm not coding, I'm behind the lens capturing landscapes, portraits, and street stories.
+          </p>
+        </div>
         
-        <div class="tech-tags">
-          <span>JavaScript</span>
-          <span>API Integration</span>
+        <!-- 2. Visual Skill Badges -->
+        <div id="skills" class="skills-container">
+          <h3>Tech Stack</h3>
+          <div class="skill-badges">
+            <div class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-badge"><i class="fa-solid fa-camera"></i> Photography</div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card-links">
-          <button class="btn disabled" disabled>Coming Soon</button>
-        </div>
-      </article>
+  <!-- 3. Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
 
+        <!-- Calorie Tracker Card -->
+        <article class="project-card">
+          <div class="card-thumbnail">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" alt="Calorie Tracker Preview" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>🍎 Calorie Tracker</h3>
+            <p>A responsive web app for setting daily goals, logging meals, and calculating remaining calories in real time.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="https://calories.m-baud.com" target="_blank" rel="noopener noreferrer" class="btn primary">
+                Live App <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/mbaud1/calorie-tracker" target="_blank" rel="noopener noreferrer" class="btn secondary">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lens Card -->
+        <article class="project-card">
+          <div class="card-thumbnail">
+            <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=600&q=80" alt="Lens Photography Portfolio Preview" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>📷 Lens</h3>
+            <p>A visual showcase of landscapes, portraits, and urban stories with dynamic gallery filtering and lightbox view.</p>
+            <div class="tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="card-links">
+              <a href="https://lens.m-baud.com/" target="_blank" rel="noopener noreferrer" class="btn primary">
+                Lens Work <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/mbaud1/lens" target="_blank" rel="noopener noreferrer" class="btn secondary">
+                <i class="fa-brands fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Future Project Placeholder -->
+        <article class="project-card disabled-card">
+          <div class="card-thumbnail placeholder-thumbnail">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="card-body">
+            <h3>🚀 Next Project</h3>
+            <p>Currently in active development using external API integrations. Coming soon!</p>
+            <div class="tech-tags">
+              <span>JavaScript</span>
+              <span>REST API</span>
+            </div>
+            <div class="card-links">
+              <button class="btn disabled" disabled>In Progress</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <h2>Get In Touch</h2>
+      <p>Whether you're looking to collaborate, hire for freelance work, or just want to say hi, feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:contact@m-baud.com" class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email Me</span>
+        </a>
+        <a href="https://github.com/mbaud1" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
     </div>
   </section>
 
