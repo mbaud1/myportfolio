@@ -290,3 +290,50 @@ body {
   transform: scale(1.1);
   opacity: 1;
 }
+/* Update your header CTA button styling */
+.nav-btn, 
+.header-cta { /* adjust class to match your header button */
+  color: #3b82f6; /* Bright accent color (blue/cyan) */
+  border: 1px solid #3b82f6;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4); /* Subtle glow effect */
+}
+/* Wrap sections in a unified container or standardize section margins */
+.container, 
+section {
+  max-width: 1200px; /* or your main max-width */
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Ensure headings align flush with card edges */
+.section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 0; /* Remove any accidental left padding on the title */
+}
+/* Wrap sections in a unified container or standardize section margins */
+.container, 
+section {
+  max-width: 1200px; /* or your main max-width */
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Ensure headings align flush with card edges */
+.section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding-left: 0; /* Remove any accidental left padding on the title */
+}
